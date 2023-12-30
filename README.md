@@ -7,5 +7,6 @@ Origin G2pw will first perform sentence segmentation for each prediction, and a 
 ## sample use
 ```
 import G2PWConverter
-self.g2pw_model = G2PWConverter(model_dir=model_dir, style='pinyin', enable_non_tradional_chinese=True, use_g2pw_once=use_g2pw_once)
+g2pw_model = G2PWConverter(model_dir=model_dir, style='pinyin', enable_non_tradional_chinese=True, use_g2pw_once=use_g2pw_once)
+pinyins = g2pw_model(word)[0]
 ```
